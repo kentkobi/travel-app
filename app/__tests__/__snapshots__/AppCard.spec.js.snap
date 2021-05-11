@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppCard component renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#B8C5D6",
+      "borderRadius": 20,
+      "marginBottom": 25,
+      "overflow": "hidden",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": Object {
+          "testUri": "../../../app/__tests__/AppCardTestImage.jpeg",
+        },
+      }
+    }
+    style={
+      Object {
+        "height": 200,
+        "width": "100%",
+      }
+    }
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Avenir-Roman",
+          "fontSize": 20,
+        },
+        Object {
+          "fontWeight": "bold",
+        },
+      ]
+    }
+  >
+     
+     
+    title1
+     
+     
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Avenir-Roman",
+          "fontSize": 20,
+        },
+        Object {
+          "fontSize": 16,
+        },
+      ]
+    }
+  >
+     
+     
+    subtitle1
+     
+     
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Avenir-Roman",
+          "fontSize": 20,
+        },
+        Object {
+          "fontSize": 16,
+        },
+      ]
+    }
+  >
+     
+     
+    category1
+     
+     
+  </Text>
+</View>
+`;
