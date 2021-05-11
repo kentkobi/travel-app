@@ -14,9 +14,7 @@ exports[`AppCard component renders correctly 1`] = `
   <Image
     source={
       Object {
-        "uri": Object {
-          "testUri": "../../../app/__tests__/AppCardTestImage.jpeg",
-        },
+        "uri": "https://reactnative.dev/docs/assets/p_cat2.png",
       }
     }
     style={

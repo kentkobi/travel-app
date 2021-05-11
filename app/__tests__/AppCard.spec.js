@@ -9,7 +9,7 @@ describe("AppCard component", () => {
       category: "category1",
       title: "title1",
       subtitle: "subtitle1",
-      image: require("../__tests__/AppCardTestImage.jpeg")
+      image: "https://reactnative.dev/docs/assets/p_cat2.png"
     };
 
     const json = renderer
@@ -30,7 +30,7 @@ describe("AppCard component", () => {
       category: "category2",
       title: "title2",
       subtitle: "subtitle2",
-      image: require("../__tests__/AppCardTestImage.jpeg")
+      image: "https://reactnative.dev/docs/assets/p_cat2.png"
     };
 
     const json = renderer
@@ -44,7 +44,7 @@ describe("AppCard component", () => {
       )
       .toJSON();
 
-    expect(json.children.includes("AppCardTestImage.jpeg"));
+    expect(json.children.includes("p_cat2.png"));
   });
 
   test("contains title, subtitle, and category", () => {
@@ -52,7 +52,7 @@ describe("AppCard component", () => {
       category: "category3",
       title: "title3",
       subtitle: "subtitle3",
-      image: require("../__tests__/AppCardTestImage.jpeg")
+      image: "https://reactnative.dev/docs/assets/p_cat2.png"
     };
 
     const json = renderer
