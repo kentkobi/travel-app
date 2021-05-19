@@ -53,8 +53,10 @@ function ItemScreen({ navigation, route }) {
   const [categoryError, setCategoryError] = useState("");
 
   const doErrorCheck = () => {
-    setTitleError(title.length > 0 ? "" : "Please set a valid Title");
-    setSubTitleError(subTitle.length > 0 ? "" : "Please set a valid subtitle");
+    setTitleError(title.length > 0 ? "" : "Please set a valid title");
+    setSubTitleError(
+      subTitle.length > 0 ? "" : "Please set a valid description"
+    );
     setCategoryError(category ? "" : "Please pick a category from the list");
     return title.length > 0 && subTitle.length > 0 && category ? true : false;
   };
@@ -80,7 +82,7 @@ function ItemScreen({ navigation, route }) {
   return (
     <AppScreen style={{ backgroundColor: AppColors.otherColor }}>
       <AppTextInput
-        icon="book-open-page-variant"
+        icon="format-title"
         placeholder="Title"
         value={title}
         onChangeText={(inputText) => setTitle(inputText)}
@@ -95,8 +97,8 @@ function ItemScreen({ navigation, route }) {
       )}
 
       <AppTextInput
-        icon="calendar-month"
-        placeholder="Date"
+        icon="subtitles-outline"
+        placeholder="Description"
         value={subTitle}
         onChangeText={(inputText) => setSubTitle(inputText)}
       />
